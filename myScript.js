@@ -5,7 +5,8 @@
 
 		function onKeyDown(event) {
 
-			var maxPoint = new Point(window.innerWidth, window.innerHeight); //maximum possible point in view
+			var maxPoint = new Point(view.size.width, view.size.height); //maximum possible point in view
+
 			var randomPoint = Point.random(); //x random, y random
 			var myPoint = maxPoint * randomPoint
 			var randomSong = Math.floor(Math.random() * sounds.length);
